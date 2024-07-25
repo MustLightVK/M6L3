@@ -2,11 +2,12 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px 0;
-    background-color: #f9f9f9;
     transition: background-color 0.3s ease;
+
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
 
     &:hover {
         background-color: #e0e0e0;
@@ -16,7 +17,7 @@
         display: flex;
         align-items: center;
         position: relative;
-        padding-left: 0;  // Убираем отступ
+        padding-left: 0;
         margin-right: 15px;
         cursor: pointer;
         user-select: none;
@@ -31,14 +32,15 @@
 
         .checkmark {
             position: relative;
-            height: 20px;  // Устанавливаем явную высоту и ширину
+            height: 20px;
             width: 20px;
-            background-color: #eee;
             border-radius: 5px;
             transition: background-color 0.3s ease;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            background-color: #eee;
         }
 
         &:hover input ~ .checkmark {
@@ -64,19 +66,23 @@
             top: 3px;
             width: 5px;
             height: 10px;
-            border: solid white;
             border-width: 0 3px 3px 0;
             transform: rotate(45deg);
+
+            border: solid white;
         }
     }
 
     .desc {
         font-size: 18px;
+
         color: #333;
+
         transition: color 0.3s ease;
 
         &.completed {
             text-decoration: line-through;
+            
             color: #999;
         }
     }
