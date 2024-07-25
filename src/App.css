@@ -4,8 +4,9 @@
   align-items: center;
   padding: 20px;
   font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
   min-height: 100vh;
+
+  background-color: #f0f0f0;
 }
 
 .todo-list {
@@ -49,7 +50,7 @@
   font-size: 16px;
 
   color: white;
-  
+
   background-color: #4caf50;
 
 }
