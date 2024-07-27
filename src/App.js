@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import TodoItem from './components/ToDoItem';
 import {todosData} from './components/todosData';
 import React from 'react';
