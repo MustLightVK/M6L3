@@ -1,27 +1,29 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export const todosData = [
     {
-        id: 1,
+        id: uuidv4(),
         text: 'cook dinner',
         completed: false
     },
     {
-        id: 2,
+        id: uuidv4(),
         text: 'buy some milk',
         completed: true
     },
     {
-        id: 3,
+        id: uuidv4(),
         text: 'walk with the dog',
         completed: false
     },
     {
-        id: 4,
+        id: uuidv4(),
         text: 'do sports',
         completed: true
     },
     {
-        id: 5,
+        id: uuidv4(),
         text: 'clean house',
         completed: false
     },
-]
+];

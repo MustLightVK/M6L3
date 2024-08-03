@@ -1,16 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./ToDoItem.scss";
 
 const TodoItem = (props) => {
-    const resolvedTask = {
-        textDecoration : 'line-through'
-    }
     return (
         <div className='todo-item'>
-            <input type='checkbox' defaultChecked={props.completed} onChange = {props.handleChange}></input>
-            <p style = {props.completed ? resolvedTask : {}}
-
-            lassName='desc'>{props.desc}</p>
+            <input type='checkbox' checked={props.completed} onChange={props.handleChange} />
+            <p className={`desc ${props.completed ? 'completed' : ''}`}>{props.desc}</p>
             <button onClick={props.deleteTask}>Delete task</button>
         </div>
     );
